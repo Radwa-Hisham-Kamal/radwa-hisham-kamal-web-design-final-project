@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro</title>
+    <link rel="icon" type="image/png" href="img/title2.jpg">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:wght@900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+
+<body class="position-relative">
+    <button class="bg-black px-2 py-2 border-0 rounded-2 position-fixed bottom-0 end-0 m-2" id="up"><i
+            class="fa-solid fa-arrow-up text-white fs-6 mx-1"></i></button>
+    <nav class="navbar pt-3 pb-0">
+        <div class="container px-0 ">
+            <div id="stickyHeader" class="bg-white z-3">
+                <div class="d-flex align-items-center justify-content-between w-100 py-2">
+                    <div class=" col-6  naaav d-none">
+                        <a class="btn fs-3" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                            aria-controls="offcanvasExample">
+                            <i class="bi bi-list"></i>
+                        </a>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                            aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-header d-flex align-items-center w-100  p-0 border-bottom">
+                                <ul class="nav w-100 row g-0 mb-0" id="pills-tab" role="tablist">
+                                    <li class="nav-item col-2 bg-body-secondary">
+                                        <button
+                                            class="nav-link active text-black d-flex align-items-center h-100 w-100 border-0 rounded-0"
+                                            id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-homee"
+                                            type="button" role="tab" aria-controls="pills-homee" aria-selected="true">
+                                            <i class="bi bi-list fs-4"></i>
+                                            </button>
+                                    </li>
+                                    <li class="nav-item col-8 bg-body-secondary">
+                                        <button
+                                            class="nav-link text-white text-uppercase fw-bold d-flex align-items-center  h-100 w-100 border-0 rounded-0"
+                                            id="pills-profile-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-profilee" type="button" role="tab"
+                                            aria-controls="pills-profilee" aria-selected="false">
+                                            SHOP BY CATEGORIES <span class="ps-2">+</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item col-2 bg-body-secondary">
+                                        <div class="h-100 w-100 d-flex align-items-center ">
+                                            <button type="button" class="btn-close m-0 p-0" data-bs-dismiss="offcanvas"
+                                                aria-label="Close"></button>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div class="offcanvas-body">
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-homee" role="tabpanel"
+                                        aria-labelledby="pills-home-tab" tabindex="0">
+                                        <div class="container">
+                                            <div class="d-flex flex-column gap-2">
+                                                <div class="d-flex justify-content-between phone">
+                                                    <a href="" class="text-black text-decoration-none">Homepage</a>
+                                                    <a href="" class="text-black text-decoration-none phone">+</a>
+                                                </div>
+                                                <div class="d-flex justify-content-between phone">
+                                                    <a href="" class="text-black text-decoration-none phone">Categories</a>
+                                                    <a href="" class="text-black text-decoration-none phone">+</a>
+                                                </div>
+                                                <div class="d-flex justify-content-between phone">
+                                                    <a href="" class="text-black text-decoration-none phone">products</a>
+                                                    <a href="" class="text-black text-decoration-none phone">+</a>
+                                                </div>
+                                                <div class="d-flex justify-content-between phone">
+                                                    <a href="" class="text-black text-decoration-none phone">pages</a>
+                                                    <a href="" class="text-black text-decoration-none phone">+</a>
+                                                </div>
+                                                <div class="d-flex justify-content-between phone">
+                                                    <a href="" class="text-black text-decoration-none phone">About Us</a>
+                                                </div>
+                                                <div class="d-flex justify-content-between phone">
+                                                    <a href="" class="text-black text-decoration-none phone">Blog</a>
+                                                </div>
+                                                <div class="d-flex align-items-center phone">
+                                                    <a class=" text-decoration-none small text-black fw-normal phone"
+                                                        href="#">
+                                                        <i
+                                                            class="bi bi-ticket-perforated fs-6 text-black fw-bold phone"></i>
+                                                        Best Discount</a>
+                                                </div>
+                                                <div class="d-flex justify-content-between phone">
+                                                    <a href=""
+                                                        class="text-black text-decoration-none text-body-secondary">recently
+                                                        viewed</a>
+                                                    <a href="" class="text-black text-decoration-none">+</a>
+                                                </div>
+                                            </div>
+                                                            <span class="border-bottom border-secondary-subtle w-100"></span>
+
+                                            <div class="d-flex flex-column gap-2">
+                                                <div class="d-flex gap-2 phone">
+                                                    <a href="" class="text-body-secondary text-decoration-none">
+                                                        <i class="bi bi-heart"></i>
+                                                        <span>Wishlist</span>
+                                                        <span>(0)</span>
+                                                    </a>
+                                                </div>
+                                                <div class="d-flex gap-2 phone">
+                                                    <a href="" class="text-body-secondary text-decoration-none">
+                                                        <i class="bi bi-person "></i><span> Account</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                                            <span class="border border-secondary-subtle w-100"></span>
+
+                                            <div class="d-flex flex-column gap-3">
+                                                <div class="d-flex flex-wrap gap-3">
+                                                    <a class="text-black text-decoration-none phone" href="#"><img
+                                                            src="img/Bandeira de Portugal.jpeg" width="15px">English</a>
+                                                    <a class="text-black text-decoration-none phone" href="#"> <img
+                                                            src="img/Bandeira de Portugal.jpeg" width="15px"> Español</a>
+                                                    <a class="text-black text-decoration-none phone" href="#"><img
+                                                            src="img/Bandeira de Portugal.jpeg" width="15px"> Français</a>
+                                                    <a class="text-black text-decoration-none phone" href="#"><img
+                                                            src="img/Bandeira de Portugal.jpeg" width="15px"> portugues</a>
+                                                </div>
+                                                <div class="d-flex flex-wrap gap-3">
+                                                    <a class="text-black text-decoration-none phone" href="#">USD</a>
+                                                    <a class="text-black text-decoration-none phone" href="#">EUR</a>
+                                                    <a class="text-black text-decoration-none phone" href="#">BRL</a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-profilee" role="tabpanel"
+                                        aria-labelledby="pills-profile-tab" tabindex="0">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img src="img/logo.png" class="navbar-brand w-9 me-4 gap-4">
+                    <a href="#" class="text-decoration-none text-dark  d-flex align-items-center phone">
+                        <i class="bi bi-telephone me-2 fs-2 fw-bolder"></i>
+                        <span class="d-flex flex-column lh-sm">
+                            <span class="small">Contact us 24/7</span>
+                            <span class="fw-bold small">(+92) 3942 7879</span>
+                        </span>
+                    </a>
+                    <div class="header-center d-flex py-1">
+                        <div class="position-relative w-100 mx-auto" style="max-width: 600px; z-index: 1050;"
+                            id="searchContainer">
+                            <form
+                                class="d-flex bg-body-secondary p-1 rounded-2 align-items-center z-1 position-relative">
+                                <select class="form-select bg-body-secondary border-0 w-auto fs-6 shadow-none"
+                                    aria-label="select example">
+                                    <option selected>All Categories</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <input type="search" placeholder="Search for products" id="searchInput"
+                                    class=" bg-body-secondary h-50 border-0 border-start border-2 rounded-0 border-secondary-subtle ps-3 flex-grow-1">
+                                <button class="bg-dark py-2 px-3 rounded-2 text-white"><i
+                                        class="bi bi-search"></i></button>
+
+                            </form>
+                            <div id="searchDropdown"
+                                class="position-absolute start-50 translate-middle-x top-0 bg-white px-4 rounded shadow d-none z-0 "
+                                style="min-width: 110%; margin-top: -1rem;height: 300px;">
+                                <div style="padding-top: 23%;">
+                                    <p class="mb-2 fw-bold">Popular search</p>
+                                    <div class="d-flex flex-wrap gap-2 ">
+                                        <a href="#"
+                                            class="btn border-secondary-subtle buy-red-hover btn-sm">smartphone</a>
+                                        <a href="#" class="btn border-secondary-subtle buy-red-hover btn-sm">laptop</a>
+                                        <a href="#" class="btn border-secondary-subtle buy-red-hover btn-sm">home &
+                                            decor</a>
+                                        <a href="#"
+                                            class="btn border-secondary-subtle buy-red-hover btn-sm">furniture</a>
+                                        <a href="#" class="btn border-secondary-subtle buy-red-hover btn-sm">camera</a>
+                                        <a href="#"
+                                            class="btn border-secondary-subtle buy-red-hover btn-sm">furniture</a>
+                                        <a href="#" class="btn border-secondary-subtle buy-red-hover btn-sm">camera</a>
+                                        <a href="#"
+                                            class="btn border-secondary-subtle buy-red-hover btn-sm">furniture</a>
+                                        <a href="#"
+                                            class="btn border-secondary-subtle buy-red-hover btn-sm">smartphone</a>
+                                        <a href="#" class="btn border-secondary-subtle buy-red-hover btn-sm">laptop</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="searchOverlay"></div>
+                    <div class="d-flex align-items-center gap-4">
+                        <div class="dropdown">
+                            <a class="text-dark text-decoration-none dropdown-toggle phone small" href="#" role="button"
+                                data-bs-toggle="dropdown">
+                                <img src="img/United States Of America Usa American Flag Cool Wall Patriotic Posters American Flag Poster Of Flags For Wall American Eagle Wall Art Cool Wall Art Print Poster 36x24.jpeg"
+                                    width="20" class="me-1 rounded-1"> English
+                            </a>
+                            <ul class="dropdown-menu text-center py-3">
+                                <li><a class="dropdown-item phone small p-2" href="#"><img
+                                            src="img/Reino da Espanha - 1981-Atualmente.jpeg" width="20"
+                                            class="me-1 rounded-1">Espanol</a></li>
+                                <li><a class="dropdown-item phone small p-2" href="#"><img
+                                            src="img/File_Flag of France_svg - Wikimedia Commons.jpeg" width="20"
+                                            class="me-1 rounded-1"> French</a></li>
+                                <li><a class="dropdown-item phone small ms-1 p-2" href="#"><img
+                                            src="img/Bandeira de Portugal.jpeg" width="20"
+                                            class="me-1 rounded-1">Portugos</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown">
+                            <a class=" text-decoration-none dropdown-toggle phone small text-dark" href="#"
+                                role="button" data-bs-toggle="dropdown">
+                                USD
+                            </a>
+                            <ul class="dropdown-menu text-center py-3">
+                                <li><a class="dropdown-item phone small p-2" href="#">EUR</a></li>
+                                <li><a class="dropdown-item phone small p-2" href="#">BRL</a></li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <a href="#" class="text-dark text-decoration-none d-flex align-items-center phone"
+                                data-bs-toggle="modal" data-bs-target="#accountModal">
+                                <i class="bi bi-person fs-3 pe-2"></i>
+                                <span class="fw-bold fs-6">Account</span>
+                            </a>
+                        </div>
+
+                        <div class="modal fade" id="accountModal" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content overflow-hidden rounded-0">
+                                    <div class="row g-0">
+                                        <div class="col-md-6 d-none d-md-block">
+                                            <img src="img/login-banner.jpg" class=" h-100 w-100 object-fit-cover"
+                                                alt="Login Image">
+                                        </div>
+                                        <div class="col-md-6  position-relative">
+                                            <button type="button"
+                                                class="btn bg-dark text-white position-absolute top-0 end-0 p-1 rounded-end-0 rounded-top-0 hover-red"
+                                                data-bs-dismiss="modal" aria-label="Close">
+                                                <i class="bi bi-x-lg"></i>
+                                            </button>
+
+                                            <h5 class="fw-bold text-center pt-lg-5">Login</h5>
+
+                                            <form class="m-auto px-lg-5 p-4 py-0">
+                                                <input type="text"
+                                                    class="form-control my-3 bg-body-secondary py-2 ps-3 fs-6"
+                                                    placeholder="Username or Email*" required>
+                                                <input type="password"
+                                                    class="form-control mb-3 bg-body-secondary py-2  ps-3 fs-6"
+                                                    placeholder="Password*" required>
+
+                                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input text-primary" type="checkbox"
+                                                            value="" id="rememberMe">
+                                                        <label class="form-check-label text-secondary small"
+                                                            for="rememberMe">Remember me</label>
+                                                    </div>
+                                                    <a href="#" class=" text-secondary small">Forgot?</a>
+                                                </div>
+
+                                                <button type="submit"
+                                                    class="btn bg-dark text-white w-100 mb-3 hover-red py-2 mb-5">Login</button>
+                                            </form>
+                                            <hr class="w-100 border-2 border-secondary-subtle">
+                                            <p class="text-center text-secondary">
+                                                Don’t have an account?
+                                                <a href="#" class=" text-dark">Register</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="position-relative">
+                            <a href="#" class="text-dark phone">
+                                <i class="fa-regular fa-heart fs-4 "></i>
+                            </a>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger p-1 px-2 text-white">
+                                0
+                            </span>
+                        </div>
+
+                        <div class="position-relative">
+                            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas"
+                                class="text-dark phone">
+                                <i class="bi bi-cart fs-4 fw-bolder"></i>
+                            </a>
+                            <span
+                                class="position-absolute bottom-50 start-100 translate-middle-x badge rounded-circle bg-danger p-1 px-2 text-white">
+                                0
+                            </span>
+                        </div>
+                        <div class="offcanvas offcanvas-end px-3 py-2" tabindex="-1" id="cartOffcanvas"
+                            aria-labelledby="cartOffcanvasLabel">
+                            <div class="offcanvas-header justify-content-between p-0 py-1">
+                                <h5 class="offcanvas-title" id="cartOffcanvasLabel">Shopping Cart <span
+                                        class="text-secondary small ps-sm-1">(0 items)</span></h5>
+                                <button data-bs-dismiss="offcanvas"
+                                    class="text-black bg-transparent shadow-none phone border-0" aria-label="Close"><i
+                                        class="bi bi-x fs-3"></i></button>
+                            </div>
+                            <div class="offcanvas-body text-center justify-content-sm-evenly d-flex flex-column">
+                                <img src="img/cart.png" alt="Empty Cart"
+                                    class="img-fluid w-50 opacity-25 align-self-center">
+                            </div>
+                            <div class="text-center">
+                                <hr class="w-100 border-2 border-secondary-subtle lh-1">
+                                <p class="text-dark fs-6">Free Shipping on All Orders Over <span
+                                        class="text-danger">$250</span></p>
+                                <button class="btn btn-dark mt-3 mb-3 w-100 hover-red small py-1 border-0">CONTINUE
+                                    SHOPPING</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="container-fluid border border-dark-subtle border-end-0 border-start-0">
+            <div class="container px-0 d-flex align-items-center justify-content-between">
+                <div class="justify-content-start gap-4 d-flex align-items-center">
+                    <div class="d-flex align-items-center border-end h-100 border-1 border-secondary-subtle py-3">
+                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#categoryOffcanvas"
+                            class="text-decoration-none pe-3 text-black phone d-flex align-items-center fw-bold ">
+                            <i class="bi bi-list fs-5 pe-2 "></i>
+                            <span class="small">SHOP BY CATEGORIES</span>
+                        </a>
+                    </div>
+                    <div class="offcanvas offcanvas-start w-20" tabindex="-1" id="categoryOffcanvas"
+                        aria-labelledby="categoryOffcanvasLabel">
+                        <div class="py-2 ps-3 bg-black">
+                            <div class="text-white d-flex align-items-center fw-bold ">
+                                <i class="bi bi-list fs-5 pe-2 "></i>
+                                <span class="small">SHOP BY CATEGORIES</span>
+                            </div>
+                        </div>
+                        <div class="offcanvas-body  align-content-start d-flex flex-column px-0 py-0">
+                            <div class="dropdown list-group dropend ">
+                                <a class="dropdown-toggle text-decoration-none dropdown-toggle fs-6 text-black list-group-item line fw-normal custom-toggle py-2"
+                                    href="#" role="button" data-bs-toggle="dropdown">
+                                    <i class="fa-solid fa-shirt pe-2"></i>
+                                    <span class="">Fashon</span>
+                                </a>
+                                <ul class="dropdown-menu text-center py-3 custom-menu-outside">
+                                    <li><a class="dropdown-item small p-2" href="#">EUR</a></li>
+                                    <li><a class="dropdown-item small p-2" href="#">BRL</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown list-group dropend ">
+                                <a class="dropdown-toggle text-decoration-none dropdown-toggle fs-6 text-black list-group-item line fw-n custom-toggle py-2"
+                                    href="#" role="button" data-bs-toggle="dropdown">
+                                    <i class="fa-solid fa-shirt pe-2"></i>
+                                    <span class="">Phone & Tablet</span>
+                                </a>
+                                <ul class="dropdown-menu text-center py-3 custom-menu-outside">
+                                    <li><a class="dropdown-item small p-2" href="#">EUR</a></li>
+                                    <li><a class="dropdown-item small p-2" href="#">BRL</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown list-group dropend ">
+                                <a class="dropdown-toggle text-decoration-none dropdown-toggle fs-6 text-black list-group-item line fw-normal py-2 custom-toggle"
+                                    href="#" role="button" data-bs-toggle="dropdown">
+                                    <i class="fa-solid fa-shirt pe-2"></i>
+                                    <span>Laptop & Computer</span>
+                                </a>
+                                <ul class="dropdown-menu text-center py-3 custom-menu-outside">
+                                    <li><a class="dropdown-item small p-2" href="#">EUR</a></li>
+                                    <li><a class="dropdown-item small p-2" href="#">BRL</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown list-group dropend ">
+                                <a class="dropdown-toggle text-decoration-none dropdown-toggle fs-6 text-black list-group-item line fw-normal py-2 custom-toggle"
+                                    href="#" role="button" data-bs-toggle="dropdown">
+                                    <i class="fa-solid fa-shirt pe-2"></i>
+                                    <span class="">TV, Audio - Video</span>
+                                </a>
+                                <ul class="dropdown-menu text-center py-3 custom-menu-outside">
+                                    <li><a class="dropdown-item small p-2" href="#">EUR</a></li>
+                                    <li><a class="dropdown-item small p-2" href="#">BRL</a></li>
+                                </ul>
+                            </div>
+                            <div class=" list-group dropend ">
+                                <a class=" text-decoration-none fs-6 text-black list-group-item line fw-normal py-2 "
+                                    href="#" role="button">
+                                    <i class="fa-solid fa-shirt pe-2"></i>
+                                    <span class="">Camera & photo</span>
+                                </a>
+                            </div>
+                            <div class="dropdown list-group dropend ">
+                                <a class="dropdown-toggle text-decoration-none dropdown-toggle fs-6 text-black list-group-item line fw-normal py-2 custom-toggle"
+                                    href="#" role="button" data-bs-toggle="dropdown">
+                                    <i class="fa-solid fa-shirt pe-2"></i>
+                                    <span class="">Home & Decor</span>
+                                </a>
+                                <ul class="dropdown-menu text-center py-3 custom-menu-outside">
+                                    <li><a class="dropdown-item small p-2" href="#">EUR</a></li>
+                                    <li><a class="dropdown-item small p-2" href="#">BRL</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown list-group dropend ">
+                                <a class="dropdown-toggle text-decoration-none dropdown-toggle fs-6 text-black list-group-item line fw-normal py-2 custom-toggle"
+                                    href="#" role="button" data-bs-toggle="dropdown">
+                                    <i class="fa-solid fa-shirt pe-2"></i>
+                                    <span class="">Beauty & Health</span>
+                                </a>
+                                <ul class="dropdown-menu text-center py-3 custom-menu-outside">
+                                    <li><a class="dropdown-item small p-2" href="#">EUR</a></li>
+                                    <li><a class="dropdown-item small p-2" href="#">BRL</a></li>
+                                </ul>
+                            </div>
+                            <div class=" list-group">
+                                <a class="e text-decoration-none fs-6 text-black list-group-item line fw-normal py-2"
+                                    href="#" role="button">
+                                    <i class="fa-solid fa-shirt pe-2"></i>
+                                    <span class="">Game Accessories</span>
+                                </a>
+                            </div>
+                            <div class="dropdown list-group dropend ">
+                                <a class="dropdown-toggle text-decoration-none dropdown-toggle fs-6 text-black list-group-item line fw-normal py-2 custom-toggle"
+                                    href="#" role="button" data-bs-toggle="dropdown">
+                                    <i class="fa-solid fa-shirt pe-2"></i>
+                                    <span class="">Autopart</span>
+                                </a>
+                                <ul class="dropdown-menu text-center py-3 custom-menu-outside">
+                                    <li><a class="dropdown-item small p-2" href="#">EUR</a></li>
+                                    <li><a class="dropdown-item small p-2" href="#">BRL</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="dropdown position-static justify-content-between d-flex align-items-center">
+                        <a class="text-decoration-none dropdown-toggle phone small text-black fw-normal" href="#"
+                            role="button" data-bs-toggle="dropdown">
+                            HomePage
+                        </a>
+
+                        <div
+                            class="dropdown-menu mega-dropdown-menu w-100 rounded-0 bg-body-secondary mt-0 shadow-sm pt-4">
+
+                            <div class="d-flex justify-content-center gap-5">
+
+                                <div class=" shadow-hover">
+                                    <a href="#" class="text-decoration-none ">
+                                        <div class="card align-items-center border-0 rounded-3" style="width: 17rem;">
+                                            <img src="img/mega-home-1.jpg" class="card-img-top" alt="">
+                                            <div class="card-body py-3">
+                                                <p class="card-text small fw-semibold">Supermarket 01</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class=" shadow-hover">
+                                    <a href="#" class="text-decoration-none ">
+                                        <div class="card align-items-center border-0 rounded-3" style="width: 17rem;">
+                                            <img src="img/mega-home-2.jpg" class="card-img-top" alt="">
+                                            <div class="card-body py-3">
+                                                <p class="card-text small fw-semibold">Supermarket 02</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class=" shadow-hover">
+                                    <a href="#" class="text-decoration-none ">
+                                        <div class="card align-items-center border-0 rounded-3" style="width: 17rem;">
+                                            <img src="img/mega-home-3.jpg" class="card-img-top" alt="">
+                                            <div class="card-body py-3">
+                                                <p class="card-text small fw-semibold">Supermarket 03</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class=" shadow-hover">
+                                    <a href="#" class="text-decoration-none ">
+                                        <div class="card align-items-center border-0 rounded-3" style="width: 17rem;">
+                                            <img src="img/mega-home-4.jpg" class="card-img-top" alt="">
+                                            <div class="card-body py-3">
+                                                <p class="card-text small fw-semibold">Supermarket 04</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center gap-5 p-4">
+                                <div class=" shadow-hover">
+                                    <a href="#" class="text-decoration-none ">
+                                        <div class="card align-items-center border-0 rounded-3" style="width: 17rem;">
+                                            <img src="img/mega-home-5.jpg" class="card-img-top" alt="">
+                                            <div class="card-body py-3">
+                                                <p class="card-text small fw-semibold">Supermarket 05</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class=" shadow-hover">
+                                    <a href="#" class="text-decoration-none ">
+                                        <div class="card align-items-center border-0 rounded-3" style="width: 17rem;">
+                                            <img src="img/mega-home-6.jpg" class="card-img-top" alt="">
+                                            <div class="card-body py-3">
+                                                <p class="card-text small fw-semibold">Supermarket 06</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown position-static">
+                        <a class="text-decoration-none dropdown-toggle phone small text-black fw-normal" href="#"
+                            role="button" data-bs-toggle="dropdown">
+                            Categories
+                        </a>
+
+                        <div class="dropdown-menu mega-dropdown-menu w-100 rounded-0 px-2 py-3 mt-0 shadow-sm">
+                            <div class="container-fluid align-content-center col-10">
+                                <div class="row justify-content-evenly small">
+                                    <div class="col-12 col-md-2">
+                                        <p class="fw-semibold mb-2">SHOP LAYOUTS</>
+                                        <ul class="list-unstyled ">
+                                            <li><a class="dropdown-item p-0 my-3 phone" href="#">Top Categories - Style
+                                                    1</a></li>
+                                            <li><a class="dropdown-item p-0 my-3 phone" href="#">Top Categories - Style
+                                                    2</a></li>
+                                            <li><a class="dropdown-item p-0 my-3 phone" href="#">Top Brands</a></li>
+                                            <li><a class="dropdown-item p-0 my-3 phone" href="#">Collapse Scroll
+                                                    Sidebar</a>
+                                            </li>
+                                            <li><a class="dropdown-item p-0 my-3 phone" href="#">List Layout</a></li>
+                                            <li><a class="dropdown-item p-0 my-3 phone" href="#">Top Banner</a></li>
+                                            <li><a class="dropdown-item p-0 my-3 phone" href="#">Filter Sidebar</a></li>
+                                            <li><a class="dropdown-item p-0 my-3 phone" href="#">Bottom Banner</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-2">
+                                        <p class="fw-semibold mb-2">SHOP LAYOUTS</p>
+                                        <ul class="list-unstyled ">
+                                            <li><a class="dropdown-item p-0 my-3 phone" href="#">Load More Button</a>
+                                            </li>
+                                            <li><a class="dropdown-item p-0 my-3 phone" href="#">Infinity Scroll</a>
+                                            </li>
+                                            <li><a class="dropdown-item p-0 my-3 phone" href="#">Ajax Pagination</a>
+                                            </li>
+                                            <li><a class="dropdown-item p-0 my-3 phone" href="#">Furniture</a></li>
+                                            <li><a class="dropdown-item p-0 my-3 phone" href="#">Electronic</a></li>
+                                            <li><a class="dropdown-item p-0 my-3 phone" href="#">Autopart</a></li>
+                                            <li><a class="dropdown-item p-0 my-3 phone" href="#">Cosmetic</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-5 d-none d-md-block">
+                                        <img src="img/laptop.png" alt="Preview" class="img-fluid ">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a class=" text-decoration-none dropdown-toggle phone small text-black fw-normal" href="#"
+                            role="button" data-bs-toggle="dropdown">
+                            Products
+                        </a>
+                        <div class="col-12 col-md-3">
+                            <ul class="dropdown-menu pe-5 ps-2 rounded-0">
+                                <li><a class="dropdown-item phone small py-2 " href="#">Simple product</a></li>
+                                <li><a class="dropdown-item phone small py-2" href="#">Variable Label Attribute</a></li>
+                                <li><a class="dropdown-item phone small py-2" href="#">Variable Dropdown Attribute</a>
+                                </li>
+                                <li><a class="dropdown-item phone small py-2" href="#">Variable Color Swatch</a></li>
+                                <li><a class="dropdown-item phone small py-2" href="#">Variable Variation Thumbnail</a>
+                                </li>
+                                <li><a class="dropdown-item phone small py-2" href="#">Group product</a></li>
+                                <li><a class="dropdown-item phone small py-2" href="#">External product</a></li>
+                                <li><a class="dropdown-item phone small py-2" href="#">Vertical thumbnail</a></li>
+                                <li><a class="dropdown-item phone small py-2" href="#">Horizontal thumbnail</a></li>
+                                <li><a class="dropdown-item phone small py-2" href="#">Summary scrolling</a></li>
+                                <li><a class="dropdown-item phone small py-2" href="#">Flash sale</a></li>
+                                <li><a class="dropdown-item phone small py-2" href="#">Video + 360 degree</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown position-static">
+                        <a class="text-decoration-none dropdown-toggle phone small text-black fw-normal" href="#"
+                            role="button" data-bs-toggle="dropdown">
+                            Pages
+                        </a>
+                        <div class="dropdown-menu mega-dropdown-menu w-100 rounded-0 px-2 pt-5 mt-0 shadow-sm">
+                            <div class="container-fluid align-content-center col-10">
+                                <div class="row justify-content-evenly small">
+                                    <div class="col-12 col-md-2">
+                                        <p class="fw-semibold mb-2">HOMEPAGES</p>
+                                        <ul class="list-unstyled ">
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Home Supermarket 01</a>
+                                            </li>
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Home Supermarket 02</a>
+                                            </li>
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Home Furniture</a></li>
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Home Electronic</a>
+                                            </li>
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Home Autopart</a></li>
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Home Cosmetic</a></li>
+                                        </ul>
+                                        <p class="fw-semibold mb-2 mt-4">ORTHER PAGES</p>
+                                        <ul class="list-unstyled ">
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Blog</a></li>
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">About us</a></li>
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Contact us</a></li>
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Coming soon</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-2">
+                                        <p class="fw-semibold mb-2">SUPERMARKET - SHOP</p>
+                                        <ul class="list-unstyled ">
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Top Categories - styl
+                                                    1</a>
+                                            </li>
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Top Categories - style
+                                                    2</a></li>
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Top Brand</a></li>
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Shop - scroll</a></li>
+                                        </ul>
+                                        <p class="fw-semibold mb-2 mt-4">FURNITURE - SHOP</p>
+                                        <ul class="list-unstyled ">
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Top Categories - style
+                                                    1</a></li>
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Top Categories - style
+                                                    2</a></li>
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Top Brand</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-2">
+                                        <p class="fw-semibold mb-2">ELECTRONIC - SHOP</p>
+                                        <ul class="list-unstyled ">
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Top Categories - style
+                                                    1</a></li>
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Top Brand</a></li>
+                                        </ul>
+                                        <p class="fw-semibold mb-2 mt-4">AUTOMOTIVE - SHOP</p>
+                                        <ul class="list-unstyled ">
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Top Categories - style
+                                                    1</a></li>
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Top Categories - style
+                                                    2</a></li>
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Top Brand</a></li>
+                                        </ul>
+                                        <p class="fw-semibold mb-2 mt-4">COSMETICS - SHOP</p>
+                                        <ul class="list-unstyled ">
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Top Categories - style
+                                                    1</a></li>
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Top Categories - style
+                                                    2</a></li>
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Top Brand</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-12 col-md-2">
+                                        <p class="fw-semibold mb-2">PRODUCT PAGES</p>
+                                        <ul class="list-unstyled ">
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Simple product</a></li>
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Variable - Label
+                                                    Attribute</a></li>
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Variable - Dropdown
+                                                    Attribute</a></li>
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Variable - Color
+                                                    Swatch</a>
+                                            </li>
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Variable - Variation
+                                                    Thumbnail</a></li>
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Group product</a></li>
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">External product</a>
+                                            </li>
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Vertical thumbnail</a>
+                                            </li>
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Horizontal
+                                                    thumbnail</a>
+                                            </li>
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Summary Scrolling</a>
+                                            </li>
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Flash Sale</a></li>
+                                            <li><a class="dropdown-item p-0 my-2 phone" href="#">Video + 360 degree</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a class=" text-decoration-none phone small text-black fw-normal" href="#">About us</a>
+                    </div>
+                    <div>
+                        <a class=" text-decoration-none phone small text-black fw-normal" href="#">Blog</a>
+                    </div>
+                    <div class="d-flex align-items-cente phone">
+                        <a class=" text-decoration-none phone small text-black fw-normal" href="#">
+                            <i class="bi bi-ticket-perforated fs-6 text-black fw-bold phone"></i>
+                            Best Discount</a>
+                    </div>
+
+                </div>
+                <div class="dropdown position-static justify-content-end ">
+                    <a class="text-decoration-none dropdown-toggle phone small text-black fw-normal" href="#"
+                        role="button" data-bs-toggle="dropdown">
+                        Recently Viewed
+                    </a>
+                    <div class="dropdown-menu mega-dropdown-menu rounded-0 w-100 py-5 mt-0 shadow-sm">
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="product-card d-flex flex-row gap-1">
+
+                                <div
+                                    class="item-card card position-relative hover-icons product-card overflow-hidden shadow-hover">
+                                    <div
+                                        class="position-absolute top-0 end-0 d-flex flex-column justify-content-center gap-1 p-3 z">
+                                        <div class="d-flex align-items-center  ">
+                                            <button type="button"
+                                                class="bg-body-secondary rounded px-2 py-1 border-0 icon-item"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-offset="0,12"
+                                                data-bs-title="Wishlist">
+                                                <i class="fa-regular fa-heart small"></i>
+                                            </button>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <button type="button"
+                                                class="bg-body-secondary rounded px-2 py-1 border-0 icon-item"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-offset="0,12"
+                                                data-bs-title="Compare">
+                                                <i class="bi bi-arrow-left-right small"></i>
+                                            </button>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <button type="button"
+                                                class="bg-body-secondary rounded px-2 py-1 border-0 icon-item"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-offset="0,12"
+                                                data-bs-title="Quick view">
+                                                <i class="bi bi-search small"></i>
+                                            </button>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <button type="button"
+                                                class="bg-body-secondary rounded px-2 py-1 border-0 icon-item"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-offset="0,12"
+                                                data-bs-title="Add to cart">
+                                                <i class="bi bi-cart small"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="text-decoration-none boder border-end ">
+                                        <div class="align-items-start rounded-4" style="width: 13rem;">
+                                            <img src="img/lap.jpg" class="card-img-top" alt="">
+                                            <div class="card-body p-2">
+                                                <h6 class="card-title mb-1 text-black fs-5 phone">Modern Table</h6>
+                                                <p class="fw-bold mb-0 fs-6 text-black">
+                                                    $569 <span
+                                                        class="text-muted text-decoration-line-through small">$1,099</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div
+                                    class="item-card card position-relative hover-icons product-card overflow-hidden shadow-hover">
+                                    <div class="position-absolute top-0 start-0 bg-danger text-white px-1 rounded m-3">
+                                        <span class="small">-35%</span>
+                                    </div>
+                                    <div
+                                        class="position-absolute top-0 end-0 d-flex flex-column justify-content-center gap-1 p-3 z">
+                                        <div class="d-flex align-items-center  ">
+                                            <button type="button"
+                                                class="bg-body-secondary rounded px-2 py-1 border-0 icon-item"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-offset="0,12"
+                                                data-bs-title="Wishlist">
+                                                <i class="fa-regular fa-heart small"></i>
+                                            </button>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <button type="button"
+                                                class="bg-body-secondary rounded px-2 py-1 border-0 icon-item"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-offset="0,12"
+                                                data-bs-title="Compare">
+                                                <i class="bi bi-arrow-left-right small"></i>
+                                            </button>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <button type="button"
+                                                class="bg-body-secondary rounded px-2 py-1 border-0 icon-item"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-offset="0,12"
+                                                data-bs-title="Quick view">
+                                                <i class="bi bi-search small"></i>
+                                            </button>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <button type="button"
+                                                class="bg-body-secondary rounded px-2 py-1 border-0 icon-item"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-offset="0,12"
+                                                data-bs-title="Add to cart">
+                                                <i class="bi bi-cart small"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="text-decoration-none boder border-end ">
+                                        <div class="align-items-start rounded-4" style="width: 13rem;">
+                                            <img src="img/lap.jpg" class="card-img-top" alt="">
+                                            <div class="card-body p-2">
+                                                <h6 class="card-title mb-1 text-black fs-5 phone">Modern Table</h6>
+                                                <p class="fw-bold mb-0 fs-6 text-black">
+                                                    $569 <span
+                                                        class="text-muted text-decoration-line-through small">$1,099</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item-card card position-relative hover-icons overflow-hidden shadow-hover">
+
+                                    <div
+                                        class="position-absolute top-0 end-0 d-flex flex-column justify-content-center gap-1 p-3 z">
+                                        <div class="d-flex align-items-center  ">
+                                            <button type="button"
+                                                class="bg-body-secondary rounded px-2 py-1 border-0 icon-item"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-offset="0,12"
+                                                data-bs-title="Wishlist">
+                                                <i class="fa-regular fa-heart small"></i>
+                                            </button>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <button type="button"
+                                                class="bg-body-secondary rounded px-2 py-1 border-0 icon-item"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-offset="0,12"
+                                                data-bs-title="Compare">
+                                                <i class="bi bi-arrow-left-right small"></i>
+                                            </button>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <button type="button"
+                                                class="bg-body-secondary rounded px-2 py-1 border-0 icon-item"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-offset="0,12"
+                                                data-bs-title="Quick view">
+                                                <i class="bi bi-search small"></i>
+                                            </button>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <button type="button"
+                                                class="bg-body-secondary rounded px-2 py-1 border-0 icon-item"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-offset="0,12"
+                                                data-bs-title="Add to cart">
+                                                <i class="bi bi-cart small"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="text-decoration-none boder border-end ">
+                                        <div class="align-items-start rounded-4" style="width: 13rem;">
+                                            <img src="img/lap.jpg" class="card-img-top" alt="">
+                                            <div class="card-body p-2">
+                                                <h6 class="card-title mb-1 text-black fs-5 phone">Modern Laptop</h6>
+                                                <p class="fw-bold mb-0 fs-6 text-black">
+                                                    $569
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div
+                                    class="item-card card position-relative hover-icons product-card overflow-hidden shadow-hover">
+                                    <div class="position-absolute top-0 start-0 bg-danger text-white px-1 rounded m-3">
+                                        <span class="small">-35%</span>
+                                    </div>
+                                    <div
+                                        class="position-absolute top-0 end-0 d-flex flex-column justify-content-center gap-1 p-3 z">
+                                        <div class="d-flex align-items-center  ">
+                                            <button type="button"
+                                                class="bg-body-secondary rounded px-2 py-1 border-0 icon-item"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-offset="0,12"
+                                                data-bs-title="Wishlist">
+                                                <i class="fa-regular fa-heart small"></i>
+                                            </button>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <button type="button"
+                                                class="bg-body-secondary rounded px-2 py-1 border-0 icon-item"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-offset="0,12"
+                                                data-bs-title="Compare">
+                                                <i class="bi bi-arrow-left-right small"></i>
+                                            </button>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <button type="button"
+                                                class="bg-body-secondary rounded px-2 py-1 border-0 icon-item"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-offset="0,12"
+                                                data-bs-title="Quick view">
+                                                <i class="bi bi-search small"></i>
+                                            </button>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <button type="button"
+                                                class="bg-body-secondary rounded px-2 py-1 border-0 icon-item"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-offset="0,12"
+                                                data-bs-title="Add to cart">
+                                                <i class="bi bi-cart small"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="text-decoration-none boder border-end">
+                                        <div class="align-items-start rounded-4" style="width: 13rem;">
+                                            <img src="img/lap.jpg" class="card-img-top" alt="">
+                                            <div class="card-body p-2">
+                                                <h6 class="card-title mb-1 text-black fs-5 phone">Modern Laptop</h6>
+                                                <p class="fw-bold mb-0 fs-6 text-black">
+                                                    $569 <span
+                                                        class="text-muted text-decoration-line-through small">$1,099</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item-card card position-relative hover-icons overflow-hidden shadow-hover">
+                                    <div
+                                        class="position-absolute top-0 end-0 d-flex flex-column justify-content-center gap-1 p-3 z">
+                                        <div class="d-flex align-items-center  ">
+                                            <button type="button"
+                                                class="bg-body-secondary rounded px-2 py-1 border-0 icon-item"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-offset="0,12"
+                                                data-bs-title="Wishlist">
+                                                <i class="fa-regular fa-heart small"></i>
+                                            </button>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <button type="button"
+                                                class="bg-body-secondary rounded px-2 py-1 border-0 icon-item"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-offset="0,12"
+                                                data-bs-title="Compare">
+                                                <i class="bi bi-arrow-left-right small"></i>
+                                            </button>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <button type="button"
+                                                class="bg-body-secondary rounded px-2 py-1 border-0 icon-item"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-offset="0,12"
+                                                data-bs-title="Quick view">
+                                                <i class="bi bi-search small"></i>
+                                            </button>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <button type="button"
+                                                class="bg-body-secondary rounded px-2 py-1 border-0 icon-item"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-offset="0,12"
+                                                data-bs-title="Add to cart">
+                                                <i class="bi bi-cart small"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="text-decoration-none boder border-end ">
+                                        <div class="align-items-start rounded-4" style="width: 13rem;">
+                                            <img src="img/lap.jpg" class="card-img-top" alt="">
+                                            <div class="card-body p-2">
+                                                <h6 class="card-title mb-1 text-black fs-5 phone">Modern Laptop</h6>
+                                                <p class="fw-bold mb-0 fs-6 text-black">
+                                                    $569
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item-card card position-relative hover-icons overflow-hidden shadow-hover">
+                                    <div
+                                        class="position-absolute top-0 end-0 d-flex flex-column justify-content-center gap-1 p-3 z">
+                                        <div class="d-flex align-items-center  ">
+                                            <button type="button"
+                                                class="bg-body-secondary rounded px-2 py-1 border-0 icon-item"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-offset="0,12"
+                                                data-bs-title="Wishlist">
+                                                <i class="fa-regular fa-heart small"></i>
+                                            </button>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <button type="button"
+                                                class="bg-body-secondary rounded px-2 py-1 border-0 icon-item"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-offset="0,12"
+                                                data-bs-title="Compare">
+                                                <i class="bi bi-arrow-left-right small"></i>
+                                            </button>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <button type="button"
+                                                class="bg-body-secondary rounded px-2 py-1 border-0 icon-item"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-offset="0,12"
+                                                data-bs-title="Quick view">
+                                                <i class="bi bi-search small"></i>
+                                            </button>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <button type="button"
+                                                class="bg-body-secondary rounded px-2 py-1 border-0 icon-item"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-offset="0,12"
+                                                data-bs-title="Add to cart">
+                                                <i class="bi bi-cart small"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="text-decoration-none boder border-end ">
+                                        <div class="align-items-start rounded-4" style="width: 13rem;">
+                                            <img src="img/lap.jpg" class="card-img-top" alt="">
+                                            <div class="card-body p-2">
+                                                <h6 class="card-title mb-1 text-black fs-5 phone">Modern Laptop</h6>
+                                                <p class="fw-bold mb-0 fs-6 text-black">
+                                                    $569
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </nav>
+
+    <section class="container py-2 d-flex flex-column justify-content-center align-items-center">
+        <h1 class="fw-bold m-3" style="font-size: 75px;">Contact us</h1>
+        <p class="fs-6 text-body-secondary col-md-3 col-7 px-4 text-center">34 Main Street, LosAngeles 9021 United States</p>
+        <div class="row justify-content-center g-4 py-4 col-9">
+            <div class="col-6 col-md-3">
+                <div class="d-flex flex-column align-items-start ms-3">
+                    <i class="bi bi-telephone fs-3 mb-1"></i>
+                    <p class="fw-semibold mb-1">Customer service</p>
+                    <a href="#" class="text-decoration-none text-black phone fancy-link-3 mb-2 fw-normal fs-6"> +92 3942
+                        7879</a>
+                    <p class="text-body-tertiary small mb-0">Call us from 8am to 8pm</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="d-flex flex-column align-items-start ms-3">
+                    <i class="bi bi-chat-square fs-3 mb-1"></i>
+                    <p class="fw-semibold mb-1">Chat with us</p>
+                    <a href="#"
+                        class="text-decoration-none text-black fancy-link-3 mb-2 fw-normal d-flex align-items-center">
+                        <i class="fa-solid fa-circle small text-success me-1"></i>
+                        <span class="phone fs-6">Live Chat</span>
+                    </a>
+                    <p class="text-body-tertiary small mb-0">Daily: 8 am to 11 pm</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="d-flex flex-column align-items-start ms-3">
+                    <i class="bi bi-envelope fs-3 mb-1"></i>
+                    <p class="fw-semibold mb-1">Write to us</p>
+                    <a href="#" class="text-decoration-none text-black phone fancy-link-3 mb-2 fw-normal fs-6">
+                        contact@example.com</a>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="d-flex flex-column align-items-start ms-3">
+                    <i class="bi bi-person-plus fs-3 mb-1"></i>
+                    <p class="fw-semibold mb-1">Follow us</p>
+                    <div class="d-flex justify-content-start gap-3 align-items-center">
+                        <i class="fa-brands fa-facebook-f fs-6 phone text-black"></i>
+                        <i class="fa-brands fa-tiktok fs-6 phone text-black"></i>
+                        <i class="bi bi-twitter-x fs-6 phone text-black"></i>
+                        <i class="fa-brands fa-youtube fs-6 phone text-black"></i>
+                        <i class="fa-brands fa-instagram fs-6 phone text-black "></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" container py-3 d-flex flex-column align-items-center ">
+        <h2 class=" fw-bold">Do you have some questions?</h2>
+        <div class="row justify-content-center my-3">
+            <div class="col-lg-9 col-md-10 col-12">
+                <form>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <input type="text"
+                                class="form-control form-control-lg shadow-none border-0 bg-body-secondary"
+                                placeholder="Name and Surname *" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email"
+                                class="form-control form-control-lg shadow-none border-0 bg-body-secondary"
+                                placeholder="Email *" required>
+                        </div>
+                        <div class="col-12">
+                            <input type="text"
+                                class="form-control form-control-lg shadow-none border-0 bg-body-secondary"
+                                placeholder="Subject *" required>
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control form-control-lg shadow-none border-0 bg-body-secondary"
+                                rows="5" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button type="submit"
+                                class="btn btn-dark btn-lg px-5 fw-bold w-100 hover-red fs-6 border-0">GET
+                                IN
+                                TOUCH</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid px-0 py-4">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.7174130404046!2d-118.26200772434043!3d34.06173251771394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7a84f0ad77f%3A0x1cd7682a98c0efb2!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2seg!4v1655043888888!5m2!1sen!2seg"
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+    <section class="container py-5">
+        <h2 class="text-center fw-bold mb-5">Stores around the world</h2>
+        <div class="row gy-5">
+            <div class="col-lg-4 col-md-6">
+                <div class="text-start">
+                    <div class="img-hover overflow-hidden rounded-2 mb-3">
+                        <img src="img/new york.jpg" class="img-fluid light-img-hover rounded-2" alt="">
+                    </div>
+                    <h5 class="fw-bold">Los Angeles</h5>
+                    <p class="my-3 small text-body-tertiary">34 Main Street, Los Angeles 9021<br>United States</p>
+                    <p class="fw-medium">+02 1234 567 88</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="text-start">
+                    <div class="img-hover overflow-hidden rounded-2 mb-3">
+                        <img src="img/new york.jpg" class="img-fluid light-img-hover rounded-2" alt="">
+                    </div>
+                    <h5 class="fw-bold">New York</h5>
+                    <p class="my-3 small text-body-tertiary">515 Broadway 10015 New York<br>United States</p>
+                    <p class="fw-medium">+49 1234 567 88</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="text-start">
+                    <div class="img-hover overflow-hidden rounded-2 mb-3">
+                        <img src="img/new york.jpg" class="img-fluid light-img-hover rounded-2" alt="">
+                    </div>
+                    <h5 class="fw-bold">California</h5>
+                    <p class="my-3 small text-body-tertiary">1000 California St 68114 Omaha<br>United States</p>
+                    <p class="fw-medium">+44 1234 567 88</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-dark pt-5 pb-2">
+        <div class="container">
+            <div class="row gap-2 mb-5">
+                <div class="col pt-4 align-items-start me-5">
+                    <img src="img/logo (2).png" width="60%" class="mt-2 mb-4">
+                    <div class="d-flex mt-1">
+                        <i class="bi bi-geo-alt pe-2 text-white-50 fs-6"></i>
+                        <p class="text-white-50 fw-light mb-1">29 SE 2nd Ave,Miami Florida 33131,United States
+                        </p>
+                    </div>
+                    <div class="d-flex">
+                        <i class="bi bi-envelope text-white-50 pe-2 fs-6"></i>
+                        <p class="text-white-50 fw-light mb-2">info@example.com</p>
+                    </div>
+                    <p class="phone text-white fs-5 fw-bold ">(+92) 3942 7879</p>
+                </div>
+                <div class="col pt-4 px-0 ps-2">
+                    <p class="fw-bolder fs-6 text-white mb-4">SHOPPING</p>
+                    <ul class="list-unstyled  d-flex flex-column justify-content-center gap-3">
+                        <a href="#" class="text-decoration-none text-white">
+                            <li class="small phone">Wishlist</li>
+                        </a>
+                        <a href="#" class="text-decoration-none text-white">
+                            <li class="small phone">Shop by Brand</li>
+                        </a>
+                        <a href="#" class="text-decoration-none text-white">
+                            <li class="small phone">Offers</li>
+                        </a>
+                        <a href="#" class="text-decoration-none text-white">
+                            <li class="small phone">Track order</li>
+                        </a>
+                        <a href="#" class="text-decoration-none text-white">
+                            <li class="small phone">Size Guide</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col pt-4 px-0">
+                    <p class="fw-bolder fs-6 text-white mb-4">INFOMATION</p>
+                    <ul class="list-unstyled  d-flex flex-column justify-content-center gap-3">
+                        <a href="#" class="text-decoration-none text-white">
+                            <li class="small phone">Track Order</li>
+                        </a>
+                        <a href="#" class="text-decoration-none text-white">
+                            <li class="small phone">Shipping & Returns</li>
+                        </a>
+                        <a href="#" class="text-decoration-none text-white">
+                            <li class="small phone">About us</li>
+                        </a>
+                        <a href="#" class="text-decoration-none text-white">
+                            <li class="small phone">Help</li>
+                        </a>
+                        <a href="#" class="text-decoration-none text-white">
+                            <li class="small phone">Gift Cards</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col pt-4 px-0">
+                    <p class="fw-bolder fs-6 text-white mb-4">ACCOUNT</p>
+                    <ul class="list-unstyled  d-flex flex-column justify-content-center gap-3">
+                        <a href="#" class="text-decoration-none text-white">
+                            <li class="small phone">Cart</li>
+                        </a>
+                        <a href="#" class="text-decoration-none text-white">
+                            <li class="small phone">My account</li>
+                        </a>
+                        <a href="#" class="text-decoration-none text-white">
+                            <li class="small phone">My orders</li>
+                        </a>
+                        <a href="#" class="text-decoration-none text-white">
+                            <li class="small phone">Wishlist</li>
+                        </a>
+                        <a href="#" class="text-decoration-none text-white">
+                            <li class="small phone">Affiliate Program</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-12 pt-4 px-0 align-items-start ">
+                    <p class="text-white fs-5 fw-bold ">Let's keep in touch</p>
+                    <form
+                        class="border border-secondary rounded-2 overflow-hidden w-100 my-4 d-flex justify-content-around align-items-center">
+                        <input type="email" placeholder="enter your email address"
+                            class="bg-dark py-2 my-1 place-holder-size border-0 w-75">
+                        <i class="bi bi-arrow-right text-white phone fs-5"></i>
+                    </form>
+                    <div class="d-flex justify-content-start gap-3 align-items-center">
+                        <i class="fa-brands fa-facebook-f fs-5 m-2 phone text-white"></i>
+                        <i class="fa-brands fa-tiktok fs-5 m-2 phone text-white"></i>
+                        <i class="bi bi-twitter-x fs-5 m-2 phone text-white"></i>
+                        <i class="fa-brands fa-youtube fs-5 m-2 phone text-white"></i>
+                        <i class="fa-brands fa-instagram fs-5 m-2 phone text-white "></i>
+                    </div>
+                </div>
+            </div>
+            <div class="justify-content-around border border-secondary rounded-2 px-5 my-3">
+                <div class="row px-5 py-4 my-2">
+                    <div class="col-md-4 col-12 mb-3">
+                        <div class="d-flex">
+                            <i class="bi bi-telephone fs-3 pe-3 text-white"></i>
+                            <div class="lh-sm">
+                                <p class="mb-1 fw-bold fs-6">
+                                    <a href="" class="text-decoration-none text-white">
+                                        Didn't find what you were looking for?
+                                    </a>
+                                </p>
+                                <p class="fw-normal small mb-0">
+                                    <a href="" class="text-decoration-none text-white fancy-link">Contact us</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-12 mb-3">
+                        <div class="d-flex">
+                            <i class="bi bi-emoji-smile fs-3 pe-3 text-white"></i>
+                            <div class="lh-sm">
+                                <p class="mb-1 fw-bold fs-6">
+                                    <a href="" class="text-decoration-none text-white">
+                                        How can we help you today?
+                                    </a>
+                                </p>
+                                <p class="fw-normal small mb-0">
+                                    <a href="" class="text-decoration-none text-white fancy-link">Help Center</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-12 mb-3">
+                        <div class="d-flex">
+                            <i class="bi bi-telephone fs-3 pe-3 text-white"></i>
+                            <div class="lh-sm">
+                                <p class="mb-1 fw-bold fs-6">
+                                    <a href="" class="text-decoration-none text-white">
+                                        We'd love to hear what you think!
+                                    </a>
+                                </p>
+                                <p class="fw-normal small mb-0">
+                                    <a href="" class="text-decoration-none text-white fancy-link">Give Feedback</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center pt-3">
+                <div>
+                    <p class="text-white-50 fw-light small mt-3">Copyright © Merto. All Rights Reserved</p>
+                </div>
+                <img src="img/payment-icons-1.png" class="w-25">
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@53.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+</body>
+
+</html>
